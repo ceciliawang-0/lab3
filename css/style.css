@@ -4,3 +4,50 @@
     box-sizing: border-box;
 }
 
+.page-layout {
+    display: grid;
+    grid-template-areas:
+        "hd"
+        "nv"
+        "mn"
+        "ft";
+    gap: 10px;
+}
+
+.header {
+    grid-area: hd;
+    background-color: honeydew;
+    padding: 20px;
+}
+
+.nav {
+    grid-area: nv;
+    background-color: lightyellow;
+    padding: 20px;
+}
+
+.main {
+    grid-area: mn;
+    background-color: aliceblue;
+    padding: 20px;
+}
+
+.footer {
+    grid-area: ft;
+    background-color: rgb(250, 216, 221);
+    padding: 20px;
+}
+
+.card-grid {
+    display: grid;
+    gap: 10px;
+}
+
+.card {
+    background-color: rgb(196, 224, 233);
+    padding: 20px;
+}
+
+.card-featured {
+    background-color: lavender;
+}
