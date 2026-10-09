@@ -51,3 +51,22 @@
 .card-featured {
     background-color: lavender;
 }
+
+@media (min-width: 768px) {
+
+    .page-layout {
+        grid-template-columns: 220px 1fr;
+        grid-template-areas:
+            "hd hd"
+            "nv mn"
+            "ft ft";
+    }
+
+    .card-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card-featured {
+        grid-column: 1 / -1;
+    }
+}
